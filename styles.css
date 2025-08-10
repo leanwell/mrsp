@@ -1,0 +1,300 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* General Styles */
+body {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #f5f5f5;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #002D62;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .logo {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    font-family: "Orbitron", sans-serif;
+}
+
+.navbar a {
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 14px 20px;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+.navbar a:hover {
+    background-color: #001f42;
+    border-radius: 4px;
+}
+
+.navbar .nav-links {
+    display: flex;
+}
+
+/* Main Content */
+.main-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.canvas-container, .caption-container {
+    width: 48%;
+    box-sizing: border-box;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+h1 {
+    color: #002D62;
+    margin: 20px 0;
+    font-family: "Orbitron", sans-serif;
+}
+
+h2 {
+    color: #002D62;
+    margin-top: 0;
+    text-align: left;
+}
+
+/* Canvas and Image Controls */
+canvas {
+    border: 5px solid #002D62;
+    transform: scale(1);
+    transform-origin: top center;
+    display: block;
+    margin: 20px auto 0;
+    width: 100%;
+    height: auto;
+    max-width: 500px;
+    position: relative;
+    background-color: #f0f0f0;
+}
+
+input[type="range"] {
+    width: 100%;
+    max-width: 300px;
+    margin: 10px auto;
+    display: block;
+    -webkit-appearance: none;
+    height: 8px;
+    border-radius: 4px;
+    background: #d3d3d3;
+    outline: none;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #002D62;
+    cursor: pointer;
+}
+
+/* Buttons */
+button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #002D62;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 600;
+}
+
+button:hover {
+    background-color: #001f42;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.custom-file-upload {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #002D62;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 600;
+    margin: 10px auto;
+}
+
+.custom-file-upload:hover {
+    background-color: #001f42;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+input[type="file"] {
+    display: none;
+}
+
+/* Frame Selector */
+.frame-selector {
+    margin: 15px auto;
+    text-align: center;
+}
+
+.frame-selector label {
+    font-weight: 600;
+    color: #002D62;
+    margin-right: 10px;
+}
+
+.frame-selector select {
+    padding: 8px 15px;
+    font-size: 16px;
+    border-radius: 4px;
+    border: 2px solid #002D62;
+    background-color: white;
+    color: #002D62;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.frame-selector select:hover {
+    border-color: #001f42;
+}
+
+.frame-selector select:focus {
+    outline: none;
+    border-color: #002D62;
+    box-shadow: 0 0 0 2px rgba(0, 45, 98, 0.2);
+}
+
+/* Input Fields and Textarea */
+.caption-container input,
+.caption-container textarea {
+    margin: 10px 0;
+    padding: 12px;
+    font-size: 16px;
+    width: calc(100% - 24px);
+    max-width: 400px;
+    border: 2px solid #ddd;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.caption-container input:focus,
+.caption-container textarea:focus {
+    outline: none;
+    border-color: #002D62;
+    box-shadow: 0 0 0 2px rgba(0, 45, 98, 0.2);
+}
+
+.caption-container input {
+    height: 40px;
+}
+
+.caption-container textarea {
+    height: 150px;
+    resize: none;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar .nav-links {
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+
+    .navbar a {
+        padding: 10px 0;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .main-content {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .canvas-container, .caption-container {
+        width: 100%;
+        max-width: 500px;
+    }
+
+    canvas {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    input[type="range"] {
+        width: 90%;
+        max-width: 250px;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar .logo {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    .navbar a {
+        padding: 8px 0;
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    canvas {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    input[type="range"] {
+        width: 100%;
+        max-width: 200px;
+    }
+
+    button, .custom-file-upload {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+
+    .caption-container input,
+    .caption-container textarea {
+        padding: 10px;
+        font-size: 14px;
+    }
+}

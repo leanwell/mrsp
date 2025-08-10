@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MRSP - DP BLAST</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <div class="navbar">
+            <a href="#" class="logo">MRSP-TSC</a>
+            <div class="nav-links">
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+            </div>
+        </div>
+    </nav>
+    <h1>MRSP-TSC DP Blast</h1>
+
+    <div class="main-content">
+        <div class="canvas-container">
+            <input type="file" id="upload" accept="image/*" hidden>
+            <label for="upload" class="custom-file-upload">Choose File</label>
+			<!-- Add this right after the "Choose File" label in index.html -->
+			<div class="frame-selector">
+				<label for="frame">Select Frame:</label>
+				<select id="frame">
+					<option value="1styear.png">1st Year</option>
+					<option value="2ndyear.png">2nd Year</option>
+					<option value="3rdyear.png">3rd Year</option>
+					<option value="4thyear.png">4th Year</option>
+				</select>
+			</div>
+            <canvas id="canvas"></canvas>
+            <label for="zoom"><br /> Zoom:</label>
+            <input type="range" id="zoom" min="1" max="3" step="0.1" value="1">
+            <button id="download">Download Image</button>
+        </div>
+
+        <div class="caption-container">
+            <h2>Caption</h2>
+            <input type="text" id="name" placeholder="Your Name"> <br />
+            <input type="text" id="year" placeholder="Year"> <br />
+            <input type="text" id="course" placeholder="Course"> <br />
+            <input type="text" id="section" placeholder="Section"> <br />
+            <button id="generate">Generate Paragraph</button> <br /> <br />
+            <textarea id="output-paragraph" placeholder="Click 'Generate Paragraph'" readonly></textarea><br />
+            <button id="copy">Copy to Clipboard</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
