@@ -10,8 +10,6 @@ document.addEventListener('DOMContentLoaded', function() {
     const frameSelect = document.getElementById('frame');
     const nameInput = document.getElementById('name');
     const yearInput = document.getElementById('year');
-    const courseInput = document.getElementById('course');
-    const sectionInput = document.getElementById('section');
     const outputParagraph = document.getElementById('output-paragraph');
 
     // State variables
@@ -171,10 +169,8 @@ document.addEventListener('DOMContentLoaded', function() {
     function generateParagraph() {
         const name = nameInput.value.trim();
         const year = yearInput.value.trim();
-        const course = courseInput.value.trim();
-        const section = sectionInput.value.trim();
 
-        if (!name || !year || !course) {
+        if (!name || !year) {
             alert('Please fill in all fields');
             return;
         }
