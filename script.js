@@ -176,26 +176,26 @@ document.addEventListener('DOMContentLoaded', function() {
         }
 
         const paragraph = `
-            PUMIKIT LANG AKO, PASUKAN NA AGAD? ARAY MO!
+PUMIKIT LANG AKO, PASUKAN NA AGAD? ARAY MO!
 
-            BEEP! BEEP! Class is calling! 📚
-            No more break, it’s time for Mechatronics rolling! 🚀
+BEEP! BEEP! Class is calling! 📚
+No more break, it’s time for Mechatronics rolling! 🚀
 
-            I am ${name}, a proud ${year} year Mechatronics Technology student from the Electrical & Allied Department! 🤖🔧
-            With the skills, knowledge, and perseverance I’ve built from past challenges, I’m ready to take on a new year of building, innovating, and conquering. 🚀
+I am ${name}, a proud ${year} year Mechatronics Technology student from the Electrical & AllDepartment! 🤖🔧
+With the skills, knowledge, and perseverance I’ve built from past challenges, I’m ready to take onew year of building, innovating, and conquering. 🚀
 
-            This academic year, no matter how short the breaks or how tough the tasks, our passion will keep the gears turning. 🔥
+This academic year, no matter how short the breaks or how tough the tasks, our passion will keep gears turning. 🔥
 
-            Good luck, let’s ride together toward the destination of success! ⚙️
+Good luck, let’s ride together toward the destination of success! ⚙️
 
-            DP Blast Frames:
-            𝙁𝙧𝙚𝙨𝙝𝙢𝙖𝙣
-            𝙎𝙤𝙥𝙝𝙤𝙢𝙤𝙧𝙚
-            𝙅𝙪𝙣𝙞𝙤𝙧
-            𝙎𝙚𝙣𝙞𝙤𝙧
-            https://leanwell.github.io/mrsp
+DP Blast Frames:
+𝙁𝙧𝙚𝙨𝙝𝙢𝙖𝙣
+𝙎𝙤𝙥𝙝𝙤𝙢𝙤𝙧𝙚
+𝙅𝙪𝙣𝙞𝙤𝙧
+𝙎𝙚𝙣𝙞𝙤𝙧
+https://leanwell.github.io/mrsp
 
-            #MechatronicsTechnology #ElectricalAndAlliedDept #FreshmanHype #TechRevolution #TUPT #DPBlast`;
+#MechatronicsTechnology #ElectricalAndAlliedDept #FreshmanHype #TechRevolution #TUPT #DPBlast`;
 
         outputParagraph.value = paragraph;
     }
