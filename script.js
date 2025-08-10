@@ -174,14 +174,34 @@ document.addEventListener('DOMContentLoaded', function() {
         const course = courseInput.value.trim();
         const section = sectionInput.value.trim();
 
-        if (!name || !year || !course || !section) {
+        if (!name || !year || !course) {
             alert('Please fill in all fields');
             return;
         }
 
-        const paragraph = 'Not yet implemented';//`Excited to announce that I've officially joined the Y My name is ${name}, currently a ${year} year student in the ${course} program, Section ${section}, at the Technological University of the Philippines - Taguig. Looking forward to an incredible year of learning, growth, and making a positive impact on our environment with this amazing community. Let's make 2024 a year to remember!`;
+        const paragraph = `
+            PUMIKIT LANG AKO, PASUKAN NA AGAD? ARAY MO!
 
-        outputParagraph.value = "Not yet implemented";//paragraph;
+            BEEP! BEEP! Class is calling! 📚
+            No more break, it’s time for Mechatronics rolling! 🚀
+
+            I am ${name}, a proud ${year} year Mechatronics Technology student from the Electrical & Allied Department! 🤖🔧
+            With the skills, knowledge, and perseverance I’ve built from past challenges, I’m ready to take on a new year of building, innovating, and conquering. 🚀
+
+            This academic year, no matter how short the breaks or how tough the tasks, our passion will keep the gears turning. 🔥
+
+            Good luck, let’s ride together toward the destination of success! ⚙️
+
+            DP Blast Frames:
+            𝙁𝙧𝙚𝙨𝙝𝙢𝙖𝙣
+            𝙎𝙤𝙥𝙝𝙤𝙢𝙤𝙧𝙚
+            𝙅𝙪𝙣𝙞𝙤𝙧
+            𝙎𝙚𝙣𝙞𝙤𝙧
+            https://leanwell.github.io/mrsp
+
+            #MechatronicsTechnology #ElectricalAndAlliedDept #FreshmanHype #TechRevolution #TUPT #DPBlast`;
+
+        outputParagraph.value = paragraph;
     }
 
     // Copy paragraph to clipboard with modern API
