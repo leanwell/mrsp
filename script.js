@@ -179,7 +179,7 @@ document.addEventListener('DOMContentLoaded', function() {
             return;
         }
 
-        const paragraph = `Excited to announce that I've officially joined the YES-O Club for 2024! My name is ${name}, currently a ${year} year student in the ${course} program, Section ${section}, at the Technological University of the Philippines - Taguig. Looking forward to an incredible year of learning, growth, and making a positive impact on our environment with this amazing community. Let's make 2024 a year to remember!`;
+        const paragraph = 'Not yet implemented';//`Excited to announce that I've officially joined the YES-O Club for 2024! My name is ${name}, currently a ${year} year student in the ${course} program, Section ${section}, at the Technological University of the Philippines - Taguig. Looking forward to an incredible year of learning, growth, and making a positive impact on our environment with this amazing community. Let's make 2024 a year to remember!`;
 
         outputParagraph.value = paragraph;
     }
