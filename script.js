@@ -181,7 +181,7 @@ PUMIKIT LANG AKO, PASUKAN NA AGAD? ARAY MO!
 BEEP! BEEP! Class is calling! 📚
 No more break, it’s time for Mechatronics rolling! 🚀
 
-I am ${name}, a proud ${year} year Mechatronics Technology student from the Electrical & AllDepartment! 🤖🔧
+I am ${name}, a proud ${year} year Mechatronics Technology student from the Electrical & Allied Department! 🤖🔧
 With the skills, knowledge, and perseverance I’ve built from past challenges, I’m ready to take onew year of building, innovating, and conquering. 🚀
 
 This academic year, no matter how short the breaks or how tough the tasks, our passion will keep gears turning. 🔥
